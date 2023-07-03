@@ -37,30 +37,16 @@ p{
 }
 
 button{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
     background: none;
-    border: 2px solid;
-    font: inherit;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 1em 2em;
-    border-color: black;
-    font-size: 20px;
+    color: #E8F8F5;
+    border: 2px solid #AED6F1;
 }
 
-button {  
-    color: var(--color);
-    transition: 0.25s;
-    
-    &:hover,
-    &:focus { 
-      border-color: var(--hover);
-      color: #fff;
-    }
-}
-
-.close:hover,
-.close:focus {
-  box-shadow: 
-    inset -3.5em 0 0 0 var(--hover),
-    inset 3.5em 0 0 0 var(--hover);  
+button:hover{
+    background-color: #008CBA;
+    border: 2px solid #008CBA;
+    color: white;
 }

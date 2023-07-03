@@ -80,7 +80,7 @@ async function updateToken(){
       tdAlbum.textContent = cancion.track.name;
 
       adButton.setAttribute('onclick',`customAdd(${index})`);
-      adButton.textContent = 'Add list';
+      adButton.textContent = 'Add';
 
       tdImage.appendChild(image);
 
@@ -136,7 +136,7 @@ async function updateToken(){
       tdAlbum.textContent = cancion.track.album.name;
 
       deleteButton.setAttribute('onclick',`deleteSong(${index})`);
-      deleteButton.textContent = 'Delete song';
+      deleteButton.textContent = 'Delete';
 
       tdImage.appendChild(image);
 
