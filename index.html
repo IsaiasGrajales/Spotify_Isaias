@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Playlist Spotify</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/80867dbfd2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <button onclick="login()">Login playlist</button>
-            </div>
+    <section class="login">
+        <div class="welcome">
+            <p>Bienvenido a mi playlist</p>
         </div>
-    </div>
+        <div class="img-profile">
+            <img src="./assets/img_profile_login.png" alt="imagen de fondo">
+        </div>
+        <div class="button">
+            <button class="close" onclick="login()">Login playlist</button>
+        </div>
+    </section>
 
     <script src="./js/index.mjs"></script>
 </body>

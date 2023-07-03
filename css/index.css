@@ -1,0 +1,66 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/imagen_fondo_login.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 16px;
+}
+
+.login{
+    background-color: #1F618D;
+    background-color: rgba(253, 254, 254, 0.1);
+    width: 25%;
+    height: 400px;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    font-size: 28px;
+    color: white;
+    margin-top: 30%;
+    font-family: 'Caprasimo', cursive;
+}
+
+button{
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-color: black;
+    font-size: 20px;
+}
+
+button {  
+    color: var(--color);
+    transition: 0.25s;
+    
+    &:hover,
+    &:focus { 
+      border-color: var(--hover);
+      color: #fff;
+    }
+}
+
+.close:hover,
+.close:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);  
+}

@@ -1,3 +1,89 @@
+body{
+    background-color: #154360;
+    margin: 0;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+/*container-data contiene a: song-data, play-music, icon*/
+.container-data{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.song-data{
+    background-image: url("../assets/imagen_cabecera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.1px solid white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.play-music{
+    border: 0.1px solid white;
+    width: 30%;
+}
+
+.icon{
+    border: 0.1px solid white;
+    width: 30%;
+}
+/*Finaliza container-data*/
+
+
+/*container-playlist contiene a: table-playlist, table-playlist-custom*/
+.container-playlist{
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.table-playlist{
+    width: 50%;
+    text-align: center;
+}
+
+.table-playlist-custom{
+    text-align: center;
+    width: 50%;
+}
+
+tr{
+    text-align: center;
+}
+
+th, td{
+    width: 25%;
+}
+
+th{
+    font-size: 14px;
+}
+
+td{
+    font-size: 12px;
+}
+/*Finaliza container-data*/
+
+/*Inicia imagenes*/
 .imageSize{
     width: 120px;
 }
+
+.profile-picture{
+    width: 100px;
+}
+/*Termina imagenes*/
+
+/*Inicia etiqueta texto*/
+h2{
+    font-size: 26px;
+}
+/*Termina etiqueta texto*/

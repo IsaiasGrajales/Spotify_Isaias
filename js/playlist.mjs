@@ -1,6 +1,7 @@
 var myPlayList;
 var playlistCustom = [];
 let codeVerifier = localStorage.getItem('code_verifier');
+var count = 0;
 
 const urlParams = new URLSearchParams(window.location.search);
 let code = urlParams.get('code');
@@ -54,8 +55,10 @@ async function updateToken(){
   
   updateToken();
 
+  //FUNCION PARA MOSTRAR LA LISTA DE CANCIONES OBTENIDAS A TRAVES DE SPOTIFY
   function showT(){
-    document.getElementById('play-title').textContent = myPlayList.name;
+
+    document.getElementById('playlist-title').textContent = "my song list";
 
     myPlayList.tracks.items.forEach((cancion,index) => {
         const tr = document.createElement('tr');
@@ -88,9 +91,14 @@ async function updateToken(){
       tr.appendChild(adButton);
       
       document.getElementById('playlist-cont').appendChild(tr);
+      count++;
     });
+
+    document.getElementById('number').textContent = count;
+
   }
 
+  //FUNCION PARA AGREGAR CANCIONES A MI LISTA DE FAVORITOS
   function customAdd(index){
     const newSound = myPlayList.tracks.items[index];
     if(validateSongRepeat(newSound)){
@@ -102,6 +110,7 @@ async function updateToken(){
     }
   }
 
+  //FUNCION PARA MOSTRAR MIS CANCIONES FAVORITAS
   function showPlayListCustom(){
 
     document.getElementById('playlist-cont-custom').innerHTML = '';
@@ -142,11 +151,13 @@ async function updateToken(){
 
   }
 
+  //FUNCION ELIMINAR CANCIONES
   function deleteSong(index){
     playlistCustom.splice(index,1);
     showPlayListCustom();
   }
 
+  //FUNCION PARA VALIDAR QUE NO EXISTAN CANCIONES REPETIDAS EN MIS FAVORITOS
   function validateSongRepeat(newSound){
     return playlistCustom.includes(newSound);
   }

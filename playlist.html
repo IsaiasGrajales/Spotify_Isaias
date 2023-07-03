@@ -5,57 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi playlist</title>
     <link rel="stylesheet" href="./css/playlist.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
 
-    <!--Tabla donde pinten su playlist-->
+    <div class="container-data">
 
-    <!--Tabla para agregar canciones de favoritos-->
+        <div class="song-data">
+            <div class="image">
+                <img id="img-perfil" class="profile-picture" src="./assets/logo.jpg" alt="Imagen de perfil">
+            </div>
+            <div class="data">
+                <h1 id="playlist-title"></h1>
+                <h2 id="username">Isaias</h2>
+                <h3 id="number-of-songs">Total de canciones: <span id="number"></span></h3>
+            </div>
+        </div>
 
-    <!--Esta tabla tendra la opcion de ordenamiento ya se por reproducciones, alfabeticamente-->
+        <div class="play-music">
+            
+        </div>
 
-    <h1 id="play-title"></h1>
+        <div class="icon">
+            <img src="" alt="">
+        </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <table>
-                    <thead>
+    </div>
+
+    <div class="container-playlist"> <!--Contenedor principal para ambas tablas-->
+
+            <div class="table-playlist"> <!--columna playlist-->
+                <h2>song list</h2>
+                <table id="dateTable"><!--Tabla de canciones o playlist-->
+                    <thead id="Headboard">
                         <tr>
-                            <th>Cancion</th>
-                            <th>Artista</th>
-                            <th>Album</th>
+                            <th id="song">Cancion</th>
+                            <th id="artist">Artista</th>
+                            <th id="album">Album</th>
                         </tr>
                     </thead>
             
                     <tbody id="playlist-cont">
                         
                     </tbody>
-                </table>
+                </table><!--Termina Tabla de canciones o playlist-->
             </div>
 
-            <div class="col">
-                <h2>Lista de deseos</h2>
-                <table>
-                    <thead>
+            <div class="table-playlist-custom"> <!--columna favoritos-->
+                <h2>wish list</h2>
+                <table id="favoritesListTable"><!--Tabla de favoritos-->
+                    <thead id="favoritesHeader">
                         <tr>
-                            <th>Cancion</th>
-                            <th>Artista</th>
-                            <th>Album</th>
+                            <th id="songFav">Cancion</th>
+                            <th id="artistFav">Artista</th>
+                            <th id="albumFav">Album</th>
                         </tr>
                     </thead>
             
                     <tbody id="playlist-cont-custom">
                         
                     </tbody>
-                </table>
+                </table><!--Termina Tabla de favoritos-->
             </div>
-        </div>
-    </div>
+
+    </div> <!--Termina elemento contenedor para ambas tablas-->
 
     <script src="./js/playlist.mjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
 </html>
