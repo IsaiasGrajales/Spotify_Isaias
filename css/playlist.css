@@ -13,28 +13,37 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 3px;
 }
 
+/*contenedor song-data*/
 .song-data{
     border: 0.1px solid #2C3E50;
     width: 40%;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
+/*termina contenedor song-data*/
 
+/*contenedor play-music*/
 .play-music{
-    border: 0.1px solid #2C3E50;
     width: 30%;
 }
+/*termina contenedor play-music*/
 
+/*contenedor icon*/
 .icon{
-    border: 0.1px solid #2C3E50;
     width: 30%;
 }
+/*contenedor icon*/
+
 /*Finaliza container-data*/
 
 
 /*container-playlist contiene a: table-playlist, table-playlist-custom*/
+
+/*container-playlist*/
 .container-playlist{
     background-image: url('../assets/music_festival.jpg');
     background-repeat: no-repeat;
@@ -43,15 +52,25 @@ body{
     display: flex;
     flex-direction: row;
 }
+/*container-playlist*/
 
+/*table-playlist*/
 .table-playlist{
     width: 50%;
     text-align: center;
 }
+/*termina table-playlist*/
 
+/*table-playlist-custom*/
 .table-playlist-custom{
     text-align: center;
     width: 50%;
+}
+/*termina table-playlist-custom*/
+
+thead{
+    background-color: #154360;
+    background-color: rgba(40, 55, 71, 0.8);
 }
 
 tbody{
@@ -78,16 +97,49 @@ td{
 }
 /*Finaliza container-data*/
 
+
 /*Inicia imagenes*/
 .imageSize{
     width: 120px;
 }
+
+.play-music{
+    background-image: url('../assets/musica.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon{
+    background-image: url('../assets/music_play.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*Termina imagenes*/
 
 /*Inicia etiqueta texto*/
+h1, h3{
+    color: white;
+}
+
 h2{
     font-size: 26px;
     color: white;
+}
+
+.title-song-list{
+    height: 2%;
+    margin: 2px;
+    background-color: #154360;
+    background-color: rgba(40, 55, 71, 0.8);
+    text-align: center;
+}
+
+.title-wish-list{
+    height: 2%;
+    margin: 2px;
+    background-color: #154360;
+    background-color: rgba(40, 55, 71, 0.8);
+    text-align: center;
 }
 /*Termina etiqueta texto*/
 
